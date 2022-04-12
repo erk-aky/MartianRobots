@@ -42,7 +42,6 @@ public class InputDataParser
         int upperX = int.Parse(match.Groups["UPPER_X"].Value);
         int upperY = int.Parse(match.Groups["UPPER_Y"].Value);
 
-        Console.WriteLine(upperX.ToString() + " - " + upperY.ToString());
         if (upperX < 0 || upperX > 50 || upperY < 0 || upperY > 50)
             throw new InvalidMarsSizeEx();
 
